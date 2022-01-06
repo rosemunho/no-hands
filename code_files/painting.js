@@ -1,0 +1,9 @@
+function startPainting()
+{
+
+}
+
+function stopPainting()
+{
+	
+}

@@ -1,7 +1,10 @@
 function setup() {
-  createCanvas(400, 400);
+	createCanvas(400, 400);
+
+	loadVoiceCommands();
+	startVoiceCommandsDetection();
 }
 
 function draw() {
-  background(220);
+	background(220);
 }
