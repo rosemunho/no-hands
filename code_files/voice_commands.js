@@ -15,6 +15,22 @@ var commandList = [
 			artyom.say("Not painting.");
 			stopPainting();
 		}
+	},
+	{
+		indexes: ["stroke line"],
+		action: function()
+		{
+			artyom.say("Changed stroke style to line.");
+			setStrokeStyle("LINE");
+		}
+	},
+	{
+		indexes: ["stroke dotted"],
+		action: function()
+		{
+			artyom.say("Changed stroke style to dotted.");
+			setStrokeStyle("DOTTED");
+		}
 	}
 ];
 
