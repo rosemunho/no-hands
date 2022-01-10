@@ -48,7 +48,7 @@ function updateColor()
 		case "BLUE":
 			setColorBlue();
 			break;
-		case "MULTICOLOR":
+		case "ALL":
 			setColorAll();
 			break;
 		default:
@@ -120,6 +120,7 @@ function paintWithDotted()
 function paintWithOval()
 {
 	noStroke();
+	fill(r, g, b);
 	for (let i = 0; i < 10; i ++)
 	{
 		ellipse(poseX, poseY, 20, 80);

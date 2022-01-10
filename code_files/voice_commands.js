@@ -57,7 +57,7 @@ var commandList = [
 		}
 	},
 	{
-		indexes: ["color red"],
+		indexes: ["colour red"],
 		action: function()
 		{
 			artyom.say("Red selected.");
@@ -65,7 +65,7 @@ var commandList = [
 		}
 	},
 	{
-		indexes: ["color green"],
+		indexes: ["colour green"],
 		action: function()
 		{
 			artyom.say("Green selected.");
@@ -73,7 +73,7 @@ var commandList = [
 		}
 	},
 	{
-		indexes: ["color blue"],
+		indexes: ["colour blue"],
 		action: function()
 		{
 			artyom.say("Blue selected.");
@@ -81,7 +81,7 @@ var commandList = [
 		}
 	},
 	{
-		indexes: ["color all"],
+		indexes: ["colour all"],
 		action: function()
 		{
 			artyom.say("All colors selected.");

@@ -44,7 +44,6 @@ function updatePositionsPre()
 	poseX = leftEye.x - 50;
 	poseY = rightEye.y;
 	
-	//what is this for? only strokeweight?
 	let distanceX = abs(poseX - prevPoseX);
 	let distanceY = abs(poseY - prevPoseY);
 	avDistance = (distanceX + distanceY)/2;
