@@ -82,8 +82,6 @@ function setColorAll()
 	r = 255 * noise(t+10);
 	g = 255 * noise(t+15);
 	b = 255 * noise(t+20);
-
-	t += 0.01;
 }
 
 function paint()
@@ -101,6 +99,7 @@ function paint()
 		default:
 			break;
 	}
+	t += 0.01;
 }
 
 function paintWithLine()
