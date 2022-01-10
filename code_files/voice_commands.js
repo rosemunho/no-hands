@@ -21,6 +21,7 @@ var commandList = [
 		action: function()
 		{
 			artyom.say("Changed stroke style to line.");
+			selectedLine();
 			setStrokeStyle("LINE");
 		}
 	},
@@ -29,6 +30,7 @@ var commandList = [
 		action: function()
 		{
 			artyom.say("Changed stroke style to dotted.");
+			selectedDotted();
 			setStrokeStyle("DOTTED");
 		}
 	},
@@ -37,6 +39,7 @@ var commandList = [
 		action: function()
 		{
 			artyom.say("Changed stroke style to using the oval brush.");
+			selectedBrush();
 			setStrokeStyle("OVAL");
 		}
 	},
@@ -61,6 +64,7 @@ var commandList = [
 		action: function()
 		{
 			artyom.say("Red selected.");
+			selectedRed();
 			setColor("RED");
 		}
 	},
@@ -69,6 +73,7 @@ var commandList = [
 		action: function()
 		{
 			artyom.say("Green selected.");
+			selectedGreen();
 			setColor("GREEN");
 		}
 	},
@@ -77,6 +82,7 @@ var commandList = [
 		action: function()
 		{
 			artyom.say("Blue selected.");
+			selectedBlue();
 			setColor("BLUE");
 		}
 	},
@@ -85,6 +91,7 @@ var commandList = [
 		action: function()
 		{
 			artyom.say("All colors selected.");
+			selectedMulticolor();
 			setColor("ALL");
 		}
 	}

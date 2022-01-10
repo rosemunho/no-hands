@@ -43,11 +43,13 @@
             To change the brush color say "color" followed by one of options below. For a colorful brush, use "color all".
           </p>
 
-          <div class="input-group flex-nowrap">
-            <button id="btn-red" type="button" class="btn btn-danger" aria-pressed="true">Red</button>&nbsp;
-            <button id="btn-green" type="button" class="btn btn-success" aria-pressed="true">Green</button>&nbsp;
-            <button id="btn-blue" type="button" class="btn btn-primary" aria-pressed="true">Blue</button>&nbsp;
-            <button id="btn-multicolor" type="button" class="btn btn-light rainbow-button" aria-pressed="true">All</button>
+          <div class="container">
+            <div class="row justify-content-md-center">
+              <div id="box-red" class="col col-lg-2  border-box">Red</div>
+              <div id="box-green" class="col col-lg-2 border-box">Green</div>
+              <div id="box-blue" class="col col-lg-2  border-box">Blue</div>
+              <div id="box-multicolor" class="col col-lg-2 rainbow-button border-box">All</div>
+            </div>
           </div>
         </div>
 
@@ -58,12 +60,13 @@
           <p>
             To change the brush stroke say "stroke" followed by one of options below.
           </p>
-          <div class="input-group flex-nowrap">
-            <button  type="button" class="btn btn-warning bouton-image" aria-pressed="true">Line</button>&nbsp;
-            <button  type="button" class="btn btn-warning bouton-image" aria-pressed="true">Dotted</button>&nbsp;
-            <button  type="button" class="btn btn-warning bouton-image" aria-pressed="true">Oval</button>
+          <div class="container flex-nowrap">
+            <div class="row justify-content-md-center">
+              <div id="box-line" class="col col-lg-2  border-box bouton-image">Line</div>
+              <div id="box-dotted" class="col col-lg-2 border-box bouton-image">Dotted</div>
+              <div id="box-brush" class="col col-lg-2  border-box bouton-image">Oval</div>
+            </div>
           </div>
-
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close Options</button>

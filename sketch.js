@@ -4,6 +4,8 @@ function setup() {
 	startFaceDetection();
 	loadVoiceCommands();
 	startVoiceCommandsDetection();
+	selectedMulticolor();
+	selectedLine();
 }
 
 function draw() {

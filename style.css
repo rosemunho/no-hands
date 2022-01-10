@@ -7,11 +7,105 @@ canvas {
   display: block;
 }
 
-.rainbow-button {
-  background-image: linear-gradient(90deg, #694a5b 0%, #308678 49%, #718142 80%, #816a48 100%);
-  
-}
 a {
   text-decoration:none;
   color:#FFF;
+}
+
+div#box-red {
+  color: #fff;
+  background-color: #dc3545;
+  margin: 0.5vh;
+  padding-top: 0.7vh;
+  padding-bottom: 0.7vh;
+  padding-left: 0.3vh;
+  padding-right: 0.3vh;
+  text-align: center;
+  border-style: solid;
+  border-color: white;
+  border-width: 4px;
+}
+
+div#box-green {
+  color: #fff;
+  background-color: #28a745;
+  margin: 0.5vh;
+  padding-top: 0.7vh;
+  padding-bottom: 0.7vh;
+  padding-left: 0.3vh;
+  padding-right: 0.3vh;
+  text-align: center;
+  border-style: solid;
+  border-color: white;
+  border-width: 3px;
+}
+
+div#box-blue {
+  color: #fff;
+  background-color: #0062cc;
+  margin: 0.5vh;
+  padding-top: 0.7vh;
+  padding-bottom: 0.7vh;
+  padding-left: 0.3vh;
+  padding-right: 0.3vh;
+  text-align: center;
+  border-style: solid;
+  border-color: white;
+  border-width: 4px;
+}
+
+.rainbow-button {
+  color: #fff;
+  margin: 0.5vh;
+  padding-top: 0.7vh;
+  padding-bottom: 0.7vh;
+  padding-left: 0px;
+  padding-right: 0px;
+  text-align: center;
+  border-style: solid;
+  border-color: white;
+  border-width: 4px;
+  background-image: linear-gradient(90deg, #694a5b 0%, #308678 49%, #718142 80%, #816a48 100%);
+}
+
+div#box-line {
+  color: #fff;
+  background-color: #333;
+  margin: 0.5vh;
+  padding-top: 0.7vh;
+  padding-bottom: 0.7vh;
+  padding-left: 01vh;
+  padding-right: 1vh;
+  text-align: center;
+  border-style: solid;
+  border-color: white;
+  border-width: 4px;
+}
+
+div#box-dotted{
+  color: #fff;
+  background-color: #777;
+  margin: 0.5vh;
+  padding-top: 0.7vh;
+  padding-bottom: 0.7vh;
+  padding-left: 1vh;
+  padding-right: 1vh;
+  text-align: center;
+  border-style: solid;
+  border-color: white;
+  border-width: 3px;
+}
+
+div#box-brush {
+  color: #fff;
+  background-color: #aaa;
+  margin: 0.5vh;
+  padding-top: 0.7vh;
+  padding-bottom: 0.7vh;
+  padding-left: 1vh;
+  padding-right: 1vh;
+  text-align: center;
+  border-style: solid;
+  border-color: white;
+  border-width: 4px;
 }
