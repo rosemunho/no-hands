@@ -6,3 +6,12 @@ html, body {
 canvas {
   display: block;
 }
+
+.rainbow-button {
+  background-image: linear-gradient(90deg, #694a5b 0%, #308678 49%, #718142 80%, #816a48 100%);
+  
+}
+a {
+  text-decoration:none;
+  color:#FFF;
+}

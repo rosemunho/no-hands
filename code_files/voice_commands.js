@@ -61,7 +61,7 @@ var commandList = [
 		action: function()
 		{
 			artyom.say("Red selected.");
-			selectColor("RED");
+			setColor("RED");
 		}
 	},
 	{
@@ -69,7 +69,7 @@ var commandList = [
 		action: function()
 		{
 			artyom.say("Green selected.");
-			selectColor("GREEN");
+			setColor("GREEN");
 		}
 	},
 	{
@@ -77,7 +77,7 @@ var commandList = [
 		action: function()
 		{
 			artyom.say("Blue selected.");
-			selectColor("BLUE");
+			setColor("BLUE");
 		}
 	},
 	{
@@ -85,7 +85,7 @@ var commandList = [
 		action: function()
 		{
 			artyom.say("All colors selected.");
-			selectColor("ALL");
+			setColor("ALL");
 		}
 	}
 ];
