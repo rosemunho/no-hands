@@ -16,6 +16,11 @@ Styles that can be used:
 	* DOTTED.
 */
 var strokeStyle = "LINE";
+var t = 0;
+var r;
+var g;
+var b;
+var avDistance;
 
 function setStrokeStyle(style)
 {
@@ -24,6 +29,10 @@ function setStrokeStyle(style)
 
 function paint()
 {
+	r = 255 * noise(t+10);
+	g = 255 * noise(t+15);
+	b = 255 * noise(t+20);
+
 	switch(strokeStyle)
 	{
 		case "LINE":
@@ -35,14 +44,20 @@ function paint()
 		default:
 			break;
 	}
+
+	updatePositionsPost();
 }
 
 function paintWithLine()
 {
-	// ADD CODE HERE
+	stroke(r, g, b);
+	strokeWeight(avDistance);
+	line(poseX, poseY, prevPoseX, prevPoseY);
 }
 
 function paintWithDotted()
 {
-	// ADD CODE HERE
+	stroke(r, g, b);
+	strokeWeight(50);
+	line(poseX, poseY, prevPoseX, prevPoseY);
 }
