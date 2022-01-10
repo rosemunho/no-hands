@@ -4,7 +4,7 @@ var commandList = [
 		indexes: ["start painting"],
 		action: function()
 		{
-			artyom.say("Painting now.");
+			artyom.say("Painting.");
 			startPainting();
 		}
 	},
@@ -30,6 +30,62 @@ var commandList = [
 		{
 			artyom.say("Changed stroke style to dotted.");
 			setStrokeStyle("DOTTED");
+		}
+	},
+	{
+		indexes: ["stroke oval"],
+		action: function()
+		{
+			artyom.say("Changed stroke style to using the oval brush.");
+			setStrokeStyle("OVAL");
+		}
+	},
+	{
+		indexes: ["open options"],
+		action: function()
+		{
+			artyom.say("Options window open. Select color and brush style.");
+			openWindow();
+		}
+	},
+	{
+		indexes: ["close options"],
+		action: function()
+		{
+			artyom.say("Options window closed");
+			closeWindow();
+		}
+	},
+	{
+		indexes: ["color red"],
+		action: function()
+		{
+			artyom.say("Red selected.");
+			selectColor("RED");
+		}
+	},
+	{
+		indexes: ["color green"],
+		action: function()
+		{
+			artyom.say("Green selected.");
+			selectColor("GREEN");
+		}
+	},
+	{
+		indexes: ["color blue"],
+		action: function()
+		{
+			artyom.say("Blue selected.");
+			selectColor("BLUE");
+		}
+	},
+	{
+		indexes: ["color all"],
+		action: function()
+		{
+			artyom.say("All colors selected.");
+			selectColor("ALL");
 		}
 	}
 ];

@@ -13,7 +13,8 @@ function stopPainting()
 /*
 Styles that can be used:
 	* LINE;
-	* DOTTED.
+	* DOTTED;
+	* OVAL.
 */
 var strokeStyle = "LINE";
 var t = 0;
@@ -27,12 +28,66 @@ function setStrokeStyle(style)
 	strokeStyle = style;
 }
 
-function paint()
+var strokeColor = "ALL";
+function setColor(color)
+{
+	strokeColor = color;
+	updateColor();
+} 
+
+function updateColor()
+{
+	switch(strokeColor)
+	{
+		case "RED":
+			setColorRed();
+			break;
+		case "GREEN":
+			setColorGreen();
+			break;
+		case "BLUE":
+			setColorBlue();
+			break;
+		case "MULTICOLOR":
+			setColorAll();
+			break;
+		default:
+			break;
+	}
+}
+
+function setColorRed()
+{
+	r = 255;
+	g = 0;
+	b = 0;
+}
+
+function setColorGreen()
+{
+	r = 0;
+	g = 255;
+	b = 0;
+}
+
+function setColorBlue()
+{
+	r = 0;
+	g = 0;
+	b = 255;
+}
+
+function setColorAll()
 {
 	r = 255 * noise(t+10);
 	g = 255 * noise(t+15);
 	b = 255 * noise(t+20);
 
+	t += 0.01;
+}
+
+function paint()
+{
 	switch(strokeStyle)
 	{
 		case "LINE":
@@ -41,11 +96,11 @@ function paint()
 		case "DOTTED":
 			paintWithDotted();
 			break;
+		case "OVAL":
+			paintWithOval();
 		default:
 			break;
 	}
-
-	updatePositionsPost();
 }
 
 function paintWithLine()
@@ -60,4 +115,13 @@ function paintWithDotted()
 	stroke(r, g, b);
 	strokeWeight(50);
 	line(poseX, poseY, prevPoseX, prevPoseY);
+}
+
+function paintWithOval()
+{
+	noStroke();
+	for (let i = 0; i < 10; i ++)
+	{
+		ellipse(poseX, poseY, 20, 80);
+	}
 }

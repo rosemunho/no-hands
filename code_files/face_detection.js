@@ -56,6 +56,4 @@ function updatePositionsPost()
 {
 	prevPoseX = poseX;
 	prevPoseY = poseY;
-
-	t = t + 0.01;
 }
